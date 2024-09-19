@@ -13,5 +13,6 @@ namespace OrangeMVCTasks.Models
         public string TeacherName { get; set; }
         public DateTime HiringDate { get; set; } = DateTime.Now;
 
+        public ICollection<Course> Courses { get; set; }
     }
 }
